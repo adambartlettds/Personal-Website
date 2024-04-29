@@ -19,17 +19,17 @@ export default {
 </script>
 
 <style scoped>
-.home {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 4rem 1rem;
-  background: linear-gradient(to right, #6dd5ed, #2193b0);
-  color: white;
-}
+    .home {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 4rem 1rem;
+        background: linear-gradient(to right, #d7e2e9, #b9d9fb);
+        color: white;
+    }
 h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;

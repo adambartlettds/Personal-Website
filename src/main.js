@@ -1,6 +1,8 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import VueLazyload from 'vue-lazyload';
+import './assets/global.css';
+
 
 const app = createApp(App);
 
