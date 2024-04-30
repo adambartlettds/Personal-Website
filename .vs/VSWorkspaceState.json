@@ -1,13 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
     "\\src\\assets",
+    "\\src\\assets\\global.css",
     "\\src\\components",
     "\\src\\images",
     "\\src\\views"
   ],
-  "SelectedNode": "\\src\\App.vue",
+  "SelectedNode": "\\src\\assets\\logo.png",
   "PreviewInSolutionExplorer": false
 }

@@ -1,24 +1,24 @@
 <template>
-  <div class="home">
-    <h1>Hi, I'm Adam Bartlett</h1>
-    <p>I craft beautiful software experiences.</p>
-    <button @click="scrollToSection('about')">Learn More</button>
-  </div>
+    <div class="home">
+        <h1>Hi, I'm Adam Bartlett</h1>
+        <p>I craft beautiful software experiences.</p>
+        <button @click="scrollToSection('about')">Learn More</button>
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'HomePage',
-  methods: {
-    scrollToSection(refName) {
-      const element = document.getElementById(refName);
-      element.scrollIntoView({ behavior: 'smooth' });
-    },
-  },
-};
+    export default {
+        name: 'HomePage',
+        methods: {
+            scrollToSection(refName) {
+                const element = document.getElementById(refName);
+                element.scrollIntoView({ behavior: 'smooth' });
+            },
+        },
+    };
 </script>
 
-<style scoped>
+    <style scoped >
     .home {
         height: 100vh;
         display: flex;
@@ -27,9 +27,26 @@ export default {
         align-items: center;
         text-align: center;
         padding: 4rem 1rem;
-        background: linear-gradient(to right, #d7e2e9, #b9d9fb);
+        background: linear-gradient(270deg, #011f4b, #005b96, #011f4b, #005b96);
+        background-size: 400% 400%;
+        animation: Gradient 240s ease infinite;
         color: white;
     }
+
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
 h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
@@ -42,7 +59,7 @@ button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   color: #333;
-  background-color: #fff;
+  background-color: #b3cde0;
   border: none;
   border-radius: 2rem;
   cursor: pointer;

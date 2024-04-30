@@ -79,7 +79,8 @@
 
     .projects-section {
         padding: 4rem 0;
-        background-color: #f5f5f5;
+        background-color: #b3cde0;
+        color: #03396c;
     }
 
     .container {

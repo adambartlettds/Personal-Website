@@ -22,6 +22,7 @@
 
 <style>
     /* Global styles */
+    @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Jersey+20+Charted&display=swap');
     html,
     body {
         padding: 0;
@@ -30,6 +31,7 @@
         height: 100%;
         /* This is to ensure that any scroll bars don't interfere with full width */
         overflow-x: hidden;
+        font-family: 'Jersey 15', sans-serif;
     }
         #app
 
