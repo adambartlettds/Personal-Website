@@ -40,10 +40,17 @@
                         url: 'https://colab.research.google.com/drive/10BJBk8OqhmOk2OAJ6aWPxhbsgpq018xW#scrollTo=qJ5kVpKL66g4'
                     },
                     {
-                        id: 2,
+                        id: 3,
                         title: 'Mock Forfeit App',
                         description: 'I really like the Forfeit App, but I wanted to build one for personal use customized to my preferences.',
                         imageUrl: require('@/images/forfeit.png'),
+                        url: 'http://link-to-project-one.com'
+                    },
+                    {
+                        id: 4,
+                        title: 'Simple Compiler',
+                        description: 'I may have bitten off more than I can chew.',
+                        imageUrl: require('@/images/compiler.jpg'),
                         url: 'http://link-to-project-one.com'
                     },
                     // Add more project objects here
