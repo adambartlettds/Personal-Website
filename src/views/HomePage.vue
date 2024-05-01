@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <h1>Hi, I'm Adam Bartlett</h1>
+        <h1>Hi, I'm Adam Shcnozeberries</h1>
         <p>I do these beautiful software experiences.</p>
         <button @click="scrollToSection('about')">Learn More</button>
     </div>
