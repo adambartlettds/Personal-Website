@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <h1>Hi, I'm Adam your mom</h1>
-        <p>I do these beautiful software experiences.</p>
+        <p>I do these beautiful software.</p>
         <button @click="scrollToSection('about')">Learn More</button>
     </div>
 </template>
