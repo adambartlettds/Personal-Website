@@ -26,6 +26,8 @@ jobs:
 
       - name: Build
         run: npm run build
+      - name: List output directory
+        run: ls -alh dist  # Make sure this lists 
 
   deploy:
     needs: build  # This ensures that deploy only runs after a successful build
