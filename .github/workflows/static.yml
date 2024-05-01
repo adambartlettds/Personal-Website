@@ -15,8 +15,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -26,27 +27,19 @@ jobs:
 
       - name: Build
         run: npm run build
+
       - name: List output directory
-        run: ls -alh dist  # Make sure this lists 
+        run: ls -alh dist
 
-  deploy:
-    needs: build  # This ensures that deploy only runs after a successful build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}  # This variable will be available after deployment step
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - name: Debug file structure
+        run: |
+          pwd
+          find .
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'dist'  # Ensure this points to your build directory
+          path: dist
 
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
