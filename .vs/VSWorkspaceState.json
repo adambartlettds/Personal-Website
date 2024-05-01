@@ -2,12 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\assets",
-    "\\src\\assets\\global.css",
     "\\src\\components",
     "\\src\\images",
     "\\src\\views"
   ],
-  "SelectedNode": "\\src\\assets\\logo.png",
   "PreviewInSolutionExplorer": false
 }
